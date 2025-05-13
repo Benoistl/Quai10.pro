@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Quai 10</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: url("Logo.jpg") no-repeat center center fixed;
-      background-size: cover;
+      background-color: #000;
+      background-image: url("Logo.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain; /* <= corrige la taille */
+      height: 100vh;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: white;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      height: 100vh;
       text-align: center;
     }
 
     .footer-text {
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.6);
       padding: 1em;
       font-size: 1.5em;
     }
