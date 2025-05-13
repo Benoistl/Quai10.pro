@@ -9,27 +9,33 @@
       margin: 0;
       padding: 0;
       background-color: #000;
-      background-image: url("Logo.jpg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain; /* <= corrige la taille */
-      height: 100vh;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: white;
+      height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: center;
+      align-items: center;
       text-align: center;
     }
 
+    .logo {
+      max-width: 400px; /* Limite la taille */
+      width: 80%;
+      height: auto;
+      margin-bottom: 2em;
+    }
+
     .footer-text {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(255, 255, 255, 0.1);
       padding: 1em;
       font-size: 1.5em;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
+  <img src="Logo.jpg" alt="Logo Quai 10" class="logo" />
   <div class="footer-text">
     Appareillage dans quelques jours – Sailing in just a few days
   </div>
